@@ -1,0 +1,373 @@
+@import url(reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@keyframes forli {
+    0% {
+        color: #282828;
+    }
+    50% {
+        color: rgba(194, 0, 0, 0.944);
+    }
+    100% {
+        color: #282828;
+    }
+}
+@keyframes fors {
+    0% {
+        background-color: rgb(0, 163, 218);
+    }
+    50% {
+        background-color: rgba(194, 0, 0, 0.944);
+        
+    }
+    100% {
+        color: rgb(0, 163, 218);
+    }
+}
+@keyframes pulse {
+    0% {
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		opacity: 1;
+	}
+
+	100% {
+		top: -15px;
+		left: -15px;
+		right: -15px;
+		bottom: -15px;
+		opacity: 0;
+	}
+}
+body {
+    background-color: rgba(128, 128, 128, 0.592);
+}
+a {
+    color: #282828;
+    display: block;
+}
+.all {
+    max-width: 1400px;
+    margin: 0px auto;
+}
+.wraptopp {
+    width: 1400px;
+}
+.wrappertop {
+    width: 1320px;
+    margin-right: 80px;
+}
+.wraptop {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.logo {
+    display: block;
+    width: 280px;
+    margin-left: 30px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+.ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 900px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 20px;
+    align-items: center;
+}   
+.li:hover {
+    animation-name: forli;
+    animation-duration: 1.3s;
+    animation-iteration-count: 1;
+}
+
+.wrapperbottom {
+    position: relative;
+}
+.back {
+    position: absolute;
+    z-index: -2;
+    width: 1400px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+.shior {
+    font-size: 60px;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    width: 400px;
+    text-align: center;
+    line-height: 80px;
+    padding-top: 50px;
+    padding-left: 100px;
+}
+.wrap2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.wiki {
+    width: 500px;
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    opacity: 70%;
+    padding-left: 30px;
+    padding-top: 200px;
+}
+.right {
+    display: flex;
+    flex-direction: column;
+    padding-top: 90px;
+    padding-right: 100px;
+}
+.regtext {
+    font-size: 30px;
+    color: rgba(194, 0, 0, 0.944);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    margin-bottom: 22px;
+}
+.input {
+    background-color: transparent;
+    color: #000;
+    border: 3.5px solid rgba(194, 0, 0, 0.944);
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    
+}
+.ins {
+    display: flex;
+    flex-direction: column;
+}
+.input1 {
+    margin-right: 12px;
+}
+.input3 {
+    margin-right: 12px;
+}
+.input5 {
+    margin-bottom: 12px;
+}
+.input6 {
+    height: 180px;
+    padding-bottom: 140px;
+}
+.in1 {
+    margin-bottom: 12px;
+}
+.in2 {
+    margin-bottom: 12px;
+}
+.il {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+}
+label {
+    color:rgba(194, 0, 0, 0.944) ;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+.check {
+    margin-left: 40px;
+    margin-right: 10px;
+}
+.terms {
+    color:rgba(194, 0, 0, 0.944) ;
+    display: inline;
+}
+.button {
+    color: #fff;
+    background: rgba(194, 0, 0, 0.944);
+    display: flex;
+    justify-content: center;
+    width: 220px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    padding: 22px 0px;
+    font-size: 32px;
+    border-radius: 50px;
+    margin-top: 50px;
+    margin-left: 120px;
+    position: relative;
+}
+.button::after {
+    content: '';
+    border-radius: 50px;
+    position: absolute;
+    border: 7px solid rgba(194, 0, 0, 0.944);
+    animation: pulse 1s ease 0s infinite;
+}
+.button:hover {
+    background-color: rgba(133, 0, 0, 0.987);
+    transition: all 1s;
+    border-color: rgba(133, 0, 0, 0.987);
+}
+.footer {
+    background-color: rgba(1, 1, 57);
+    margin-top: 18px;
+    height: 200px;
+}
+.footerin {
+    width: 1320px;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: row;
+}
+.a2 {
+    color: #fff;
+}
+.ul2 {
+    display: flex;
+    flex-direction: row;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-top: 40px;
+}
+.lltop {
+    margin-right: 30px;
+    margin-left: 40px;
+}
+.lili {
+    margin-bottom: 10px;
+}
+.lilo:hover {
+    animation: none;
+}
+.callss {
+    display: flex;
+    flex-direction: column;
+}
+
+.telnomer {
+    display: flex;
+    flex-direction: row;
+}
+.telnomerleft , .emailleft {
+    color: deepskyblue;
+    font-size: 21px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    margin-right: 15px;
+}
+.email {
+    display: flex;
+    flex-direction: row;
+}
+.email , .telnomer {
+    color: #fff;
+    font-size: 20px;
+    opacity: 0.7;
+    font-size: 22px;
+    letter-spacing: 1px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    margin-top: 12px;
+}
+.telnomer {
+    width: 280px;
+}
+.callss {
+    margin-top: 20px;
+    margin-left: 58px;
+    display: flex;
+    flex-direction: row;
+}
+.footerasos {
+    display: flex;
+    flex-direction: column;
+    
+}
+.btttm {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.lassst {
+    opacity: 0.95;
+    color: red;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    margin-top: 26px;
+    margin-left: 90px;
+}
+.lasta {
+    color: red;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    display: inline;
+}
+.suport {
+    margin-left: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 150px;   
+}
+.imgsahifa1 {
+    padding-top: 12px;
+    padding-left: 9px;
+}
+.imgsahifa1w {
+    border-radius: 50%;
+    background-color: rgb(0, 163, 218);
+    width: 40px;
+    height: 40px;
+}
+.imgsahifa2 {
+    padding-top: 10px;
+    padding-left: 15px;
+}
+.imgsahifa2w {
+    border-radius: 50%;
+    background-color: rgb(0, 163, 218);
+    width: 40px;
+    height: 40px;
+}
+.imgsahifa3 {
+    padding-top: 10px;
+    padding-left: 10px;
+}
+.imgsahifa3w {
+    border-radius: 50%;
+    background-color: rgb(0, 163, 218);
+    width: 40px;
+    height: 40px;
+}
+.imgsahifa1w:hover {
+    animation-name: fors;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+.imgsahifa2w:hover {
+    animation-name: fors;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+.imgsahifa3w:hover {
+    animation-name: fors;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
